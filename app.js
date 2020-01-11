@@ -9,5 +9,9 @@ const app = express();
 
 // #5
 app.get('/', function(req, res) {
-
+    res.send("Welcome to our app!");
 });
+
+
+// #6
+app.listen(3000);
