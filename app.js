@@ -13,5 +13,5 @@ app.get('/', function(req, res) {
 });
 
 
-// #6
+// #6 app listen the test it in gitbash with node app and then localhost:3000
 app.listen(3000);
