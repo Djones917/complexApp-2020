@@ -8,7 +8,7 @@ const app = express();
 
 // #7
 app.set('views', 'views');
-app.set('view engine', x);
+app.set('view engine', 'ejs');
 
 // #5
 app.get('/', function(req, res) {
