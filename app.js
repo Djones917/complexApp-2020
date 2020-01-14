@@ -6,6 +6,9 @@ const express = require('express');
 // #4
 const app = express();
 
+// #7
+app.set('views', 'views');
+app.set('view engine', x);
 
 // #5
 app.get('/', function(req, res) {
