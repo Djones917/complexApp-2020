@@ -12,7 +12,8 @@ app.set('view engine', 'ejs');
 
 // #5
 app.get('/', function(req, res) {
-    res.send("Welcome to our app!");
+    //res.send("Welcome to our app!");
+    res.render('home-guest');
 });
 
 
