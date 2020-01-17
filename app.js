@@ -6,6 +6,9 @@ const express = require('express');
 // #4
 const app = express();
 
+// 8
+app.use(express.static('public'));
+
 // #7
 app.set('views', 'views');
 app.set('view engine', 'ejs');
