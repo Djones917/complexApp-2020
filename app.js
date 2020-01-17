@@ -1,3 +1,4 @@
+// Installed nodemon and added to package.json so instead of npm app use npm run watch
 // #1 npm init -y  - this will create package.json recipe file
 // #2 npm install express - this will install express.js
 
