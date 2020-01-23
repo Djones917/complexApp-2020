@@ -7,6 +7,10 @@ const express = require('express');
 // #4
 const app = express();
 
+
+// #9
+const router = require('./router');
+
 // 8
 app.use(express.static('public'));
 
