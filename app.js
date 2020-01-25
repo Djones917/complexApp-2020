@@ -8,8 +8,9 @@ const express = require('express');
 const app = express();
 
 
-// #9
+// #9 this will run and return anything in router.js object, array, function ect.
 const router = require('./router');
+console.log(router);
 
 // 8
 app.use(express.static('public'));
