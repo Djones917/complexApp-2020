@@ -20,7 +20,7 @@ app.set('views', 'views');
 app.set('view engine', 'ejs');
 
 
-
+app.use('/', router);
 
 
 // app listen the test it in gitbash with node app and then localhost:3000
