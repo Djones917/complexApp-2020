@@ -3,25 +3,15 @@
 // #2 npm install express - this will install express.js
 
 
-const express = require('express');
+const express = require('express')
+const app = express()
 
-const app = express();
+const router = require('./router')
 
+app.use(express.static('public'))
+app.set('views', 'views')
+app.set('view engine', 'ejs')
 
-//  This will run and return anything in router.js object, array, function ect.
-const router = require('./router');
-console.log(router);
+app.use('/', router)
 
-
-app.use(express.static('public'));
-
-
-app.set('views', 'views');
-app.set('view engine', 'ejs');
-
-
-app.use('/', router);
-
-
-// app listen the test it in gitbash with node app and then localhost:3000
-app.listen(3000);
+app.listen(3000)
