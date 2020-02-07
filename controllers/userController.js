@@ -12,6 +12,6 @@ exports.register = function() {
 
 }
 
-exports.home = function() {
-    
+exports.home = function(req, res) {
+    res.render('home-guest');
 }
