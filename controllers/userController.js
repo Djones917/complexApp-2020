@@ -11,7 +11,7 @@ exports.logout = function() {
 
 
 exports.register = function(req, res) {
-    console.log(req.body);
+   let user = new User();
    res.send("Thanks for trying to register!");
 }
 
