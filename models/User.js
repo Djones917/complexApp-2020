@@ -1,6 +1,6 @@
 // Constructor function - Blue Print Object
-let User = function() {
-    this.homePlanet = "earth";    
+let User = function(data) {
+    this.data = data;
 }
 
 // add a method to constructor above
