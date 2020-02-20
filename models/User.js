@@ -4,6 +4,8 @@ let User = function(data) {
 }
 
 // add a method to constructor above
-User.prototype.jump = function() {};
+User.prototype.register = function() {
+    // Step 1. validate User Data
+};
 
 module.exports = User;
