@@ -3,6 +3,12 @@ let User = function(data) {
     this.data = data;
 }
 
+
+User.prototype.validate = function() {
+    
+}
+
+
 // add a method to constructor above
 User.prototype.register = function() {
     // Step 1: validate user data
