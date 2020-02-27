@@ -7,6 +7,15 @@ let User = function(data) {
 }
 
 
+User.prototype.cleanUp = function() {
+    if(typeof(this.data.username) != "string") {this.data.username = ""}
+    if(typeof(this.data.email) != "string") {this.data.email = ""}
+    if(typeof(this.data.password) != "string") {this.data.password = ""}
+
+    // Get rid of any B.S. properties!
+}
+
+
 User.prototype.validate = function() {
    if(this.data.username == "") {this.errors.push("You must provide a username!")}
    if(this.data.username != "" && !validator.isAlphanumeric(this.data.username)) {this.errors.push("Username can only contain letters and numbers!")}
