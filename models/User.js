@@ -13,6 +13,11 @@ User.prototype.cleanUp = function() {
     if(typeof(this.data.password) != "string") {this.data.password = ""}
 
     // Get rid of any B.S. properties!
+    this.data = {
+        username: this.data.username.trim().toLowerCase(),
+        email: this.data.email.trim().toLowerCase(),
+        password: this.data.password
+    }
 }
 
 
