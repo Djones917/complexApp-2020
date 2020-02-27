@@ -22,6 +22,7 @@ User.prototype.validate = function() {
 // add a method to constructor above
 User.prototype.register = function() {
     // Step 1: validate user data
+    this.cleanUp();
     this.validate();
     // Step 2: only if there are no validation errors
 
