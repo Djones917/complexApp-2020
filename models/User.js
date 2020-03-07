@@ -1,3 +1,4 @@
+const usersCollection = require('../db').collection("users");
 const validator = require("validator");
 
 // Constructor function - Blue Print Object
@@ -39,8 +40,10 @@ User.prototype.register = function() {
     this.cleanUp();
     this.validate();
     // Step 2: only if there are no validation errors
-
-    // Step 3: then save the user data into database
+    // then save the user data into database
+    if(!this.errors.length) {
+      usersCollection.insertOne(this.data);
+    }
 };
 
 module.exports = User;
