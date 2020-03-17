@@ -34,6 +34,12 @@ User.prototype.validate = function() {
 }
 
 
+
+
+User.prototype.login = function() {
+    
+}
+
 // add a method to constructor above
 User.prototype.register = function() {
     // Step 1: validate user data
