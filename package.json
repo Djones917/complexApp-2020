@@ -29,6 +29,7 @@
     "jsonwebtoken": "^8.5.1",
     "marked": "^0.8.0",
     "md5": "^2.2.1",
+    "minimist": "^1.2.5",
     "mongodb": "^3.5.5",
     "nodemon": "^2.0.2",
     "sanitize-html": "^1.22.1",
