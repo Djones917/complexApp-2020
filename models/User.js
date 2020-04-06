@@ -35,8 +35,8 @@ User.prototype.validate = function() {
 
 
 
-// npm run watch keeps crashing NOTE!
-User.prototype.login = function(callback) {
+
+User.prototype.login = function() {
     this.cleanUp();
     usersCollection.findOne({username: this.data.username}, (err, attemptedUser) => {
         if(attemptedUser && attemptedUser.password == this.data.password) {
