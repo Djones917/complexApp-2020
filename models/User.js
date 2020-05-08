@@ -60,6 +60,9 @@ User.prototype.register = function() {
     // Step 2: only if there are no validation errors
     // then save the user data into database
     if(!this.errors.length) {
+      // hash user password
+      let salt = bcrypt.genSalt(10);
+      this.data.password = bcrypt.hashSync(this.data.password, salt);
       usersCollection.insertOne(this.data);
     }
 };
