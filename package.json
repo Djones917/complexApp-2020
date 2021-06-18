@@ -35,7 +35,7 @@
     "minimist": "^1.2.5",
     "mongodb": "^3.6.9",
     "nodemon": "^2.0.7",
-    "sanitize-html": "^1.27.5",
+    "sanitize-html": "^2.3.2",
     "socket.io": "^2.4.1",
     "validator": "^12.2.0",
     "webpack": "^4.46.0",
